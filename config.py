@@ -6,6 +6,8 @@ class Config:
     TESTING = False
     JWT_SECRET_KEY = jwt_secret
     JWT_BLACKLIST_ENABLED = True
+    JWT_ERROR_MESSAGE_KEY = 'message'
+    JWT_ACCESS_TOKEN_EXPIRES = False
 
 
 class DevelopmentConfig(Config):
